@@ -11,12 +11,75 @@ import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "VS Design Studio",
+  url: "https://www.vsdesignstudio.com.br",
+  image: "https://www.vsdesignstudio.com.br/og-image.jpeg",
+  description:
+    "Estúdio de design e soluções digitais especializado em criação de sites profissionais, identidade visual, branding, UI/UX Design, social media e soluções com inteligência artificial.",
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Bom Despacho",
+    },
+    {
+      "@type": "State",
+      name: "Minas Gerais",
+    },
+    {
+      "@type": "Country",
+      name: "Brasil",
+    },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bom Despacho",
+    addressRegion: "MG",
+    addressCountry: "BR",
+  },
+  knowsAbout: [
+    "Criação de sites",
+    "Landing pages",
+    "Identidade visual",
+    "Branding",
+    "Design gráfico",
+    "UI/UX Design",
+    "Social Media",
+    "Materiais gráficos",
+    "Inteligência artificial",
+    "Soluções digitais",
+  ],
+  serviceType: [
+    "Criação de sites profissionais",
+    "Landing pages",
+    "Identidade visual",
+    "Branding",
+    "UI/UX Design",
+    "Social Media",
+    "Materiais gráficos",
+    "Soluções com inteligência artificial",
+  ],
+  sameAs: [
+    "https://instagram.com/vsdesignstudio_",
+  ],
+};
+
 export default function Home() {
   return (
     <>
+      {/* Dados estruturados para mecanismos de busca */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+
       {/* Efeitos globais */}
-      <ScrollProgress />
       <CursorGlow />
+      <ScrollProgress />
 
       {/* Cabeçalho */}
       <Header />
