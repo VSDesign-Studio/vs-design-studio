@@ -80,7 +80,7 @@ export const projects: Project[] = [
     image: "/images/lp-vs-design.jpg",
     year: "2026",
     featured: false,
-    real: false,
+    real: true,
     href: "https://vs-design-studio.vercel.app/#inicio",
   },
 ];
