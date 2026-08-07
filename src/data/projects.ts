@@ -17,7 +17,7 @@ export const projects: Project[] = [
     category: "Branding Completo",
     description:
       "Desenvolvimento de uma identidade visual estratégica, moderna e preparada para fortalecer o posicionamento da marca.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/arm-capa.png",
     year: "2026",
     featured: true,
     real: true,
