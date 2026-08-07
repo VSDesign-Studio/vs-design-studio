@@ -21,7 +21,7 @@ export const projects: Project[] = [
     year: "2026",
     featured: true,
     real: true,
-    href: "#contato",
+    href: "https://www.behance.net/gallery/245282541/Branding-Logo-ARM-Assessoria-Contabil",
   },
   {
     id: 2,
