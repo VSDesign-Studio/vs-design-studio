@@ -79,8 +79,8 @@ export const projects: Project[] = [
       "Landing page moderna e estratégica, desenvolvida para apresentar serviços e gerar oportunidades comerciais.",
     image: "/images/lp-vs-design.jpg",
     year: "2026",
-    featured: true,
-    real: true,
+    featured: false,
+    real: false,
     href: "https://vs-design-studio.vercel.app/#inicio",
   },
 ];
