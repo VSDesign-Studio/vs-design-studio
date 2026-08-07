@@ -77,7 +77,7 @@ export const projects: Project[] = [
     category: "Landing Page",
     description:
       "Landing page moderna e estratégica, desenvolvida para apresentar serviços e gerar oportunidades comerciais.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/lp-vs-design.jpg",
     year: "2026",
     featured: false,
     real: false,
