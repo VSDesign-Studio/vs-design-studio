@@ -53,7 +53,7 @@ export const projects: Project[] = [
     category: "Branding Conceitual",
     description:
       "Marca premium inspirada no nascer do sol, no café especial e em experiências acolhedoras.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/aurora-cafe-capa.png",
     year: "2026",
     featured: false,
     real: false,
