@@ -57,7 +57,7 @@ export const projects: Project[] = [
     year: "2026",
     featured: false,
     real: false,
-    href: "#contato",
+    href: "https://www.behance.net/gallery/253150893/Aurora-Caf-Premium-Brand-Identity",
   },
   {
     id: 5,
