@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vsdesignstudio.com.br"),
+  metadataBase: new URL("https://www.vsdesignstudio.com.br"),
 
   title: {
     default: "VS Design Studio | Design, Sites e Soluções Digitais",
@@ -45,10 +45,14 @@ export const metadata: Metadata = {
   creator: "VS Design Studio",
   publisher: "VS Design Studio",
 
+  alternates: {
+    canonical: "https://www.vsdesignstudio.com.br",
+  },
+
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "/",
+    url: "https://www.vsdesignstudio.com.br",
     siteName: "VS Design Studio",
     title: "VS Design Studio | Design, Sites e Soluções Digitais",
     description:
@@ -75,10 +79,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-
-  alternates: {
-    canonical: "/",
-  },
 };
 
 export default function RootLayout({
@@ -91,9 +91,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#070B16] text-white">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
