@@ -14,11 +14,18 @@ import Testimonials from "@/components/Testimonials";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+
   name: "VS Design Studio",
+
   url: "https://www.vsdesignstudio.com.br",
+
   image: "https://www.vsdesignstudio.com.br/og-image.jpeg",
+
   description:
     "Estúdio de design e soluções digitais especializado em criação de sites profissionais, identidade visual, branding, UI/UX Design, social media e soluções com inteligência artificial.",
+
+  telephone: "+55 37 99941-8756",
+
   areaServed: [
     {
       "@type": "City",
@@ -33,12 +40,14 @@ const jsonLd = {
       name: "Brasil",
     },
   ],
+
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bom Despacho",
     addressRegion: "MG",
     addressCountry: "BR",
   },
+
   knowsAbout: [
     "Criação de sites",
     "Landing pages",
@@ -51,6 +60,7 @@ const jsonLd = {
     "Inteligência artificial",
     "Soluções digitais",
   ],
+
   serviceType: [
     "Criação de sites profissionais",
     "Landing pages",
@@ -61,6 +71,7 @@ const jsonLd = {
     "Materiais gráficos",
     "Soluções com inteligência artificial",
   ],
+
   sameAs: [
     "https://instagram.com/vsdesignstudio_",
   ],
