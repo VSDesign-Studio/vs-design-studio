@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 const navigation = [
   { label: "Início", href: "#inicio" },
-  { label: "Serviços", href: "#services" },
+  { label: "Serviços", href: "#servicos" },
   { label: "Portfólio", href: "#portfolio" },
-  { label: "Sobre", href: "#about" },
+  { label: "Sobre", href: "#sobre" },
   { label: "Depoimentos", href: "#depoimentos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -64,8 +64,14 @@ export default function Footer() {
               </a>
 
               <p className="mt-6 max-w-sm text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-                Criatividade, tecnologia e estratégia para transformar marcas
-                e construir experiências digitais modernas e profissionais.
+                Estúdio de design e soluções digitais especializado em criação
+                de sites profissionais, identidade visual, branding, UI/UX,
+                social media e inteligência artificial.
+              </p>
+
+              <p className="mt-4 max-w-sm text-sm leading-7 text-gray-500">
+                Atendimento em Bom Despacho, Minas Gerais, e projetos online
+                para empresas de todo o Brasil.
               </p>
 
               {/* Redes e contato rápido */}
@@ -87,7 +93,7 @@ export default function Footer() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Conversar pelo WhatsApp"
+                  aria-label="Conversar com a VS Design Studio pelo WhatsApp"
                   className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/50 hover:bg-green-500/10 hover:text-white"
                 >
                   WhatsApp
@@ -128,7 +134,7 @@ export default function Footer() {
                 {services.map((service) => (
                   <li key={service}>
                     <a
-                      href="#services"
+                      href="#servicos"
                       className="inline-flex text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-orange-400 sm:text-base"
                     >
                       {service}
@@ -150,6 +156,7 @@ export default function Footer() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Conversar com a VS Design Studio pelo WhatsApp"
                   className="group flex items-start gap-3 text-gray-400 transition-colors duration-300 hover:text-white"
                 >
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-orange-400 transition-colors duration-300 group-hover:border-orange-500/40 group-hover:bg-orange-500/10">
@@ -182,6 +189,7 @@ export default function Footer() {
                 {/* E-mail */}
                 <a
                   href="mailto:contato@vsdesignstudio.com.br"
+                  aria-label="Enviar e-mail para a VS Design Studio"
                   className="group flex items-start gap-3 text-gray-400 transition-colors duration-300 hover:text-white"
                 >
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] text-orange-400 transition-colors duration-300 group-hover:border-orange-500/40 group-hover:bg-orange-500/10">
@@ -237,11 +245,11 @@ export default function Footer() {
                     </strong>
 
                     <span className="mt-1 block text-sm">
-                      Bom Despacho, MG
+                      Bom Despacho, Minas Gerais
                     </span>
 
                     <span className="mt-1 block text-xs text-gray-400">
-                      Atendimento online para todo o Brasil
+                      Atendimento online para empresas de todo o Brasil
                     </span>
                   </span>
                 </div>
@@ -264,7 +272,8 @@ export default function Footer() {
               </p>
 
               <p className="mt-2 text-xs text-gray-400">
-                Design, tecnologia e estratégia para marcas que querem crescer.
+                Design, sites, identidade visual e soluções digitais para marcas
+                que querem crescer.
               </p>
             </div>
 

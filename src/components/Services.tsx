@@ -15,25 +15,25 @@ const services = [
   {
     title: "Sites Profissionais",
     description:
-      "Sites modernos, rápidos e responsivos, preparados para transformar visitantes em clientes.",
+      "Criamos sites modernos, rápidos, responsivos e preparados para apresentar sua empresa, gerar credibilidade e transformar visitantes em potenciais clientes.",
     icon: Monitor,
   },
   {
     title: "Branding & Identidade Visual",
     description:
-      "Criamos marcas fortes, memoráveis e estratégicas que posicionam empresas no mercado.",
+      "Desenvolvemos identidades visuais estratégicas, logotipos e sistemas de marca pensados para posicionar empresas de forma profissional e memorável.",
     icon: Palette,
   },
   {
     title: "UI/UX Design",
     description:
-      "Interfaces bonitas, intuitivas e focadas em oferecer a melhor experiência para os usuários.",
+      "Criamos interfaces digitais modernas, intuitivas e responsivas, com foco em usabilidade, experiência do usuário e conversão.",
     icon: Sparkles,
   },
   {
     title: "Inteligência Artificial",
     description:
-      "Soluções inteligentes utilizando IA para otimizar processos, aumentar a produtividade e acelerar resultados.",
+      "Aplicamos inteligência artificial em soluções digitais para otimizar processos, aumentar produtividade e criar novas possibilidades para empresas.",
     icon: Bot,
   },
 ];
@@ -41,13 +41,13 @@ const services = [
 export default function Services() {
   return (
     <section
-      id="services"
-      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-28"
+      id="servicos"
+      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-32"
     >
       {/* Glow principal */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-orange-500/10 blur-[110px] sm:h-[420px] sm:w-[420px] sm:blur-[140px]"
+        className="pointer-events-none absolute left-1/2 top-1/3 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[150px]"
       />
 
       {/* Glow lateral */}
@@ -65,15 +65,16 @@ export default function Services() {
             </span>
 
             <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl">
-              Soluções digitais para
+              Design e soluções digitais para
               <span className="mt-1 block text-orange-500">
-                marcas que querem crescer
+                empresas que querem crescer
               </span>
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-400 sm:mt-6 sm:text-lg sm:leading-8">
-              Design, tecnologia e estratégia reunidos para criar experiências
-              digitais que fortalecem marcas e geram resultados reais.
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-gray-400 sm:mt-6 sm:text-lg sm:leading-8">
+              Criamos sites profissionais, identidades visuais, interfaces
+              digitais e soluções com inteligência artificial para empresas de
+              Bom Despacho, Minas Gerais e de todo o Brasil.
             </p>
           </div>
         </Reveal>
@@ -136,7 +137,11 @@ export default function Services() {
                         className="inline-flex items-center gap-2 font-semibold text-orange-400 transition-all duration-300 group-hover:gap-4 hover:text-orange-300"
                       >
                         Saiba mais
-                        <ArrowUpRight size={18} aria-hidden="true" />
+
+                        <ArrowUpRight
+                          size={18}
+                          aria-hidden="true"
+                        />
                       </a>
                     </div>
                   </div>

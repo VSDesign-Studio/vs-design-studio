@@ -27,38 +27,38 @@ const benefits = [
     icon: Sparkles,
     title: "Design Estratégico",
     description:
-      "Criamos soluções visuais pensadas para fortalecer marcas, gerar conexão e transmitir profissionalismo.",
+      "Criamos soluções visuais pensadas para fortalecer marcas, gerar conexão, transmitir profissionalismo e melhorar o posicionamento da empresa.",
   },
   {
     icon: Rocket,
     title: "Tecnologia Moderna",
     description:
-      "Utilizamos ferramentas atuais para desenvolver experiências digitais rápidas, modernas e responsivas.",
+      "Utilizamos ferramentas atuais para desenvolver sites e experiências digitais rápidas, modernas, responsivas e preparadas para diferentes dispositivos.",
   },
   {
     icon: Target,
     title: "Foco em Resultado",
     description:
-      "Cada projeto é desenvolvido para melhorar a presença, a percepção e o posicionamento da sua marca.",
+      "Cada projeto é desenvolvido para melhorar a presença digital, a percepção da marca e a comunicação com clientes e potenciais clientes.",
   },
   {
     icon: Zap,
     title: "Inovação com IA",
     description:
-      "Aplicamos inteligência artificial para otimizar processos, ampliar possibilidades e acelerar resultados.",
+      "Aplicamos inteligência artificial em processos criativos e soluções digitais para aumentar eficiência, ampliar possibilidades e acelerar resultados.",
   },
 ];
 
 export default function About() {
   return (
     <section
-      id="about"
-      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-28"
+      id="sobre"
+      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-32"
     >
       {/* Glow laranja */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-120px] top-20 h-72 w-72 rounded-full bg-orange-500/10 blur-[110px] sm:right-0 sm:h-[400px] sm:w-[400px] sm:blur-[140px]"
+        className="pointer-events-none absolute right-[-100px] top-20 h-72 w-72 rounded-full bg-orange-500/10 blur-[130px]"
       />
 
       {/* Glow azul */}
@@ -77,7 +77,7 @@ export default function About() {
               </span>
 
               <h2 className="mt-6 text-3xl font-black leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl">
-                Criatividade que encontra
+                Design, estratégia e
                 <span className="block text-orange-500 sm:inline">
                   {" "}
                   tecnologia.
@@ -85,16 +85,22 @@ export default function About() {
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
-                A VS Design Studio nasceu da união entre design, estratégia e
-                inovação. Criamos identidades visuais, sites e experiências
-                digitais para empresas que querem construir uma presença forte
-                e profissional no mercado.
+                A VS Design Studio é um estúdio de design e soluções digitais
+                especializado em identidade visual, criação de sites
+                profissionais, experiências digitais e projetos estratégicos
+                para empresas que querem fortalecer sua presença no mercado.
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-gray-400">
-                Cada projeto é pensado para unir estética, funcionalidade e
-                resultado, criando soluções alinhadas aos objetivos e à
-                personalidade de cada negócio.
+                Atendemos empresas de Bom Despacho, Minas Gerais e de outras
+                regiões do Brasil, desenvolvendo projetos personalizados que
+                unem estética, funcionalidade, tecnologia e comunicação.
+              </p>
+
+              <p className="mt-4 max-w-2xl text-base leading-7 text-gray-400">
+                Cada projeto é pensado de forma estratégica para refletir a
+                personalidade do negócio, transmitir credibilidade e criar uma
+                presença digital mais profissional e consistente.
               </p>
 
               {/* Estatísticas */}

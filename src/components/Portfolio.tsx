@@ -16,14 +16,15 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#070B16] py-20 text-white sm:py-24 lg:py-32"
     >
-      {/* Glows */}
+      {/* Glow laranja */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-orange-500/10 blur-[110px] sm:h-[450px] sm:w-[450px] sm:blur-[150px]"
+        className="pointer-events-none absolute right-[-100px] top-16 h-72 w-72 rounded-full bg-orange-500/10 blur-[130px]"
       />
 
+      {/* Glow azul */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute bottom-20 left-0 h-64 w-64 rounded-full bg-blue-500/10 blur-[120px]"
@@ -38,16 +39,17 @@ export default function Portfolio() {
             </span>
 
             <h2 className="mx-auto mt-6 max-w-4xl text-3xl font-black leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
-              Projetos que geram
+              Projetos de design e sites
 
               <span className="block text-orange-500">
-                resultados reais.
+                criados para gerar impacto.
               </span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-gray-400 sm:mt-6 sm:text-lg sm:leading-8">
-              Criamos experiências digitais, identidades visuais e soluções
-              estratégicas para transformar negócios em marcas fortes.
+              Conheça alguns projetos de identidade visual, branding, criação
+              de sites, interfaces digitais e soluções criativas desenvolvidas
+              pela VS Design Studio.
             </p>
           </div>
         </Reveal>
@@ -83,8 +85,8 @@ export default function Portfolio() {
                 </div>
 
                 <p className="max-w-lg text-sm leading-6 text-gray-400 sm:text-right">
-                  Uma seleção de projetos reais e conceituais desenvolvidos
-                  para diferentes segmentos.
+                  Uma seleção de projetos reais e conceituais de branding,
+                  identidade visual, design gráfico e experiências digitais.
                 </p>
               </div>
             </Reveal>
@@ -115,8 +117,8 @@ export default function Portfolio() {
               </h3>
 
               <p className="mt-3 max-w-2xl leading-7 text-gray-400">
-                Vamos criar uma solução visual e digital alinhada aos objetivos
-                da sua empresa.
+                Vamos desenvolver uma identidade visual, um site profissional
+                ou uma solução digital alinhada aos objetivos da sua empresa.
               </p>
             </div>
 

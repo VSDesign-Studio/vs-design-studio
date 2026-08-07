@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 const navigation = [
   {
     label: "Serviços",
-    href: "#services",
+    href: "#servicos",
   },
   {
     label: "Portfólio",
@@ -14,7 +14,7 @@ const navigation = [
   },
   {
     label: "Sobre",
-    href: "#about",
+    href: "#sobre",
   },
   {
     label: "Depoimentos",
@@ -89,18 +89,15 @@ export default function Header() {
       }`}
     >
       {/* Barra principal */}
-      <div className="relative z-[9998] mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6">
         {/* Logo */}
         <a
           href="#inicio"
-          onClick={closeMenu}
           aria-label="Ir para o início da página"
-          className="flex items-center text-xl font-black tracking-tight text-white sm:text-2xl"
+          className="flex items-center text-lg font-black tracking-[-0.03em] text-white sm:text-xl"
         >
-          <span className="text-orange-500">VS</span>
-
+          VS
           <span className="ml-1.5">Design Studio</span>
-
           <span className="text-orange-500">.</span>
         </a>
 
@@ -193,7 +190,8 @@ export default function Header() {
               </a>
 
               <p className="mt-6 text-center text-sm leading-6 text-gray-400">
-                Design, tecnologia e estratégia para transformar sua marca.
+                Design, sites, identidade visual e soluções digitais para
+                empresas que querem crescer.
               </p>
             </div>
           </div>

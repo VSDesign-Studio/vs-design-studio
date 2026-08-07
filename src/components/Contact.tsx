@@ -80,8 +80,14 @@ ${message}`
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg sm:leading-8">
-            Preencha as informações abaixo. Ao enviar, uma mensagem completa
-            será aberta no WhatsApp para você iniciar o atendimento.
+            Solicite um orçamento para criação de sites, landing pages,
+            identidade visual, social media, UI/UX Design, materiais gráficos
+            e soluções digitais com inteligência artificial.
+          </p>
+
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-500 sm:text-base">
+            Atendimento em Bom Despacho, Minas Gerais, e projetos realizados
+            online para empresas de todo o Brasil.
           </p>
         </div>
 
@@ -103,15 +109,18 @@ ${message}`
               </h3>
 
               <p className="mt-5 leading-7 text-gray-400">
-                Quanto mais detalhes você enviar, melhor será nossa primeira
-                análise da sua necessidade.
+                Envie as principais informações sobre o que sua empresa
+                precisa. Quanto mais detalhes você compartilhar, melhor será
+                nossa primeira análise do projeto.
               </p>
 
               <div className="mt-8 space-y-4">
+                {/* WhatsApp */}
                 <a
                   href="https://wa.me/5537999418756"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Entrar em contato com a VS Design Studio pelo WhatsApp"
                   className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:border-green-500/40 hover:bg-green-500/10"
                 >
                   <span
@@ -132,8 +141,10 @@ ${message}`
                   </span>
                 </a>
 
+                {/* E-mail */}
                 <a
                   href="mailto:contato@vsdesignstudio.com.br"
+                  aria-label="Enviar e-mail para a VS Design Studio"
                   className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:border-orange-500/40 hover:bg-orange-500/10"
                 >
                   <span
@@ -154,6 +165,7 @@ ${message}`
                   </span>
                 </a>
 
+                {/* Localização / atendimento */}
                 <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4">
                   <span
                     aria-hidden="true"
@@ -168,7 +180,8 @@ ${message}`
                     </strong>
 
                     <span className="mt-1 block text-sm leading-6 text-gray-400">
-                      Bom Despacho, MG, e atendimento online para todo o Brasil.
+                      Bom Despacho, Minas Gerais, com atendimento online para
+                      empresas de todo o Brasil.
                     </span>
                   </span>
                 </div>
@@ -177,7 +190,8 @@ ${message}`
               <div className="mt-8 border-t border-white/10 pt-6">
                 <p className="text-sm leading-6 text-gray-300">
                   O preenchimento deste formulário não gera cobrança ou
-                  compromisso. Ele serve apenas para iniciar nossa conversa.
+                  compromisso. Ele serve apenas para iniciar nossa conversa e
+                  entender melhor o projeto.
                 </p>
               </div>
             </div>
@@ -304,7 +318,7 @@ ${message}`
               type="submit"
               className="group mt-6 inline-flex w-full items-center justify-center gap-3 rounded-xl bg-orange-500 px-7 py-4 font-semibold text-white shadow-lg shadow-orange-500/20 transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 hover:shadow-orange-500/30"
             >
-              Enviar pelo WhatsApp
+              Solicitar orçamento pelo WhatsApp
 
               <span
                 aria-hidden="true"
