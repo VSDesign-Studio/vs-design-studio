@@ -29,7 +29,7 @@ export const projects: Project[] = [
     category: "Branding",
     description:
       "Identidade visual criada para transmitir criatividade, movimento e personalidade no mercado audiovisual.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/capa-nebula-films.png",
     year: "2026",
     featured: false,
     real: true,
