@@ -81,6 +81,6 @@ export const projects: Project[] = [
     year: "2026",
     featured: false,
     real: false,
-    href: "#contato",
+    href: "https://vs-design-studio.vercel.app/#inicio",
   },
 ];
