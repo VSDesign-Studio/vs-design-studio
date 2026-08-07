@@ -65,7 +65,7 @@ export const projects: Project[] = [
     category: "Identidade Visual",
     description:
       "Projeto conceitual com uma identidade sólida, técnica e preparada para transmitir credibilidade.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/atlas-engenharia.png",
     year: "2026",
     featured: false,
     real: false,
