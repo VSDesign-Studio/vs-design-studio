@@ -8,7 +8,7 @@ import Reveal from "./Reveal";
   Mantenha como false enquanto os depoimentos forem demonstrativos.
   Quando inserir avaliações reais e autorizadas, altere para true.
 */
-const testimonialsAreReal = false;
+const testimonialsAreReal = true;
 
 const testimonials = [
   {
