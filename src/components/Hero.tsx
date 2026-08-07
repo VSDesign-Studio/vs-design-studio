@@ -31,12 +31,6 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen overflow-hidden bg-[#070B16] text-white"
     >
-      {/* Background principal */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,#243b6b_0%,#070B16_55%)]"
-      />
-
       {/* Glow laranja */}
       <div
         aria-hidden="true"
@@ -69,24 +63,24 @@ export default function Hero() {
             <span>Design • Tecnologia • IA</span>
           </div>
 
-          {/* Título */}
+          {/* Título principal */}
           <h1 className="text-4xl font-black leading-[1.08] tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-[4rem] xl:text-7xl">
-            Criamos marcas
+            Design, sites e marcas
 
             <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-              que impressionam.
+              que geram resultados.
             </span>
 
             <span className="mt-2 block">
-              Sites que geram resultados.
+              Estratégia digital para empresas.
             </span>
           </h1>
 
           {/* Descrição */}
           <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-gray-300 sm:mt-8 sm:text-lg sm:leading-8 lg:mx-0">
-            Transformamos ideias em experiências digitais por meio de design
-            estratégico, tecnologia e inteligência artificial. Criamos marcas
-            modernas, profissionais e preparadas para crescer.
+            A VS Design Studio cria sites profissionais, identidades visuais,
+            peças para redes sociais e soluções digitais para empresas de
+            Bom Despacho, Minas Gerais e de todo o Brasil.
           </p>
 
           {/* Botões */}
@@ -162,7 +156,7 @@ export default function Hero() {
 
               <div className="ml-2 min-w-0 flex-1 rounded-lg border border-white/5 bg-white/5 px-3 py-1.5 sm:ml-4">
                 <span className="block truncate text-xs text-gray-400 sm:text-sm">
-                  vsdesignstudio.com.br
+                  www.vsdesignstudio.com.br
                 </span>
               </div>
             </div>
@@ -171,7 +165,7 @@ export default function Hero() {
             <div className="relative aspect-[16/10] w-full overflow-hidden">
               <Image
                 src="/images/hero-site.jpeg"
-                alt="Prévia de um projeto digital desenvolvido pela VS Design Studio"
+                alt="Projeto de site profissional desenvolvido pela VS Design Studio"
                 fill
                 loading="eager"
                 fetchPriority="high"
