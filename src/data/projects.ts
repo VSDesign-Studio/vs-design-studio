@@ -41,7 +41,7 @@ export const projects: Project[] = [
     category: "Identidade Visual",
     description:
       "Construção de uma marca forte e reconhecível, alinhada ao segmento e ao público da empresa.",
-    image: "/images/hero-site.jpeg",
+    image: "/images/casa-dos-bombeiros.png",
     year: "2026",
     featured: false,
     real: true,
