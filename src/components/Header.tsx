@@ -4,32 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navigation = [
-  {
-    label: "Início",
-    href: "/",
-  },
-  {
-    label: "Serviços",
-    href: "/servicos",
-  },
-  {
-    label: "Portfólio",
-    href: "/portfolio",
-  },
-  {
-    label: "Sobre",
-    href: "/sobre",
-  },
-  {
-    label: "Depoimentos",
-    href: "/depoimentos",
-  },
-  {
-    label: "Contato",
-    href: "/contato",
-  },
-];
+import { siteConfig } from "@/config/site";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -112,7 +87,7 @@ export default function Header() {
           aria-label="Navegação principal"
           className="hidden items-center gap-7 lg:flex"
         >
-          {navigation.map((item) => (
+          {siteConfig.navigation.map((item) => (
             <Link
               key={item.label}
               href={item.href}
@@ -128,7 +103,7 @@ export default function Header() {
           href="/contato"
           className="hidden rounded-xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(249,115,22,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-orange-600 lg:inline-flex"
         >
-          Solicitar orçamento
+          {siteConfig.cta.requestQuote}
         </Link>
 
         {/* Botão mobile */}
@@ -171,7 +146,7 @@ export default function Header() {
               aria-label="Navegação mobile"
               className="flex flex-col gap-2"
             >
-              {navigation.map((item, index) => (
+              {siteConfig.navigation.map((item, index) => (
                 <Link
                   key={item.label}
                   href={item.href}
@@ -193,7 +168,7 @@ export default function Header() {
                 onClick={closeMenu}
                 className="flex w-full items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 font-semibold text-white shadow-[0_15px_40px_rgba(249,115,22,0.25)] transition-all duration-300 hover:bg-orange-600"
               >
-                Solicitar orçamento
+                {siteConfig.cta.requestQuote}
               </Link>
 
               <p className="mt-6 text-center text-sm leading-6 text-gray-400">

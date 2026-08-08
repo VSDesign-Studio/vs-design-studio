@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 
 import Reveal from "./Reveal";
+import { getWhatsappUrl, siteConfig } from "@/config/site";
 
 const contactBenefits = [
   {
@@ -22,13 +23,7 @@ const contactBenefits = [
 ];
 
 export default function FinalCTA() {
-  const whatsappNumber = "5537999418756";
-
-  const whatsappMessage = encodeURIComponent(
-    "Olá, Vítor! Conheci a VS Design Studio pelo site e gostaria de solicitar um orçamento."
-  );
-
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappUrl = getWhatsappUrl(siteConfig.whatsapp.quoteMessage);
 
   return (
     <section
@@ -110,7 +105,7 @@ export default function FinalCTA() {
                   aria-label="Solicitar orçamento pelo WhatsApp"
                   className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-blue-600 to-orange-500 px-7 py-4 font-semibold text-white shadow-[0_15px_40px_rgba(37,99,235,0.25)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(249,115,22,0.3)] sm:w-auto sm:px-8"
                 >
-                  Solicitar orçamento
+                  {siteConfig.cta.requestQuote}
 
                   <ArrowRight
                     size={20}
@@ -132,7 +127,7 @@ export default function FinalCTA() {
                     className="text-green-400 transition-transform duration-300 group-hover:scale-110"
                   />
 
-                  Falar no WhatsApp
+                  {siteConfig.cta.whatsapp}
                 </a>
               </div>
 

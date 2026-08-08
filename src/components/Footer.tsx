@@ -2,69 +2,10 @@ import Link from "next/link";
 
 import BackToTopButton from "./BackToTopButton";
 import Reveal from "./Reveal";
-
-const navigation = [
-  {
-    label: "Início",
-    href: "/",
-  },
-  {
-    label: "Serviços",
-    href: "/servicos",
-  },
-  {
-    label: "Portfólio",
-    href: "/portfolio",
-  },
-  {
-    label: "Sobre",
-    href: "/sobre",
-  },
-  {
-    label: "Depoimentos",
-    href: "/depoimentos",
-  },
-  {
-    label: "Contato",
-    href: "/contato",
-  },
-];
-
-const services = [
-  {
-    label: "Sites profissionais",
-    href: "/servicos",
-  },
-  {
-    label: "Identidade visual",
-    href: "/servicos",
-  },
-  {
-    label: "UI/UX Design",
-    href: "/servicos",
-  },
-  {
-    label: "Soluções com IA",
-    href: "/servicos",
-  },
-  {
-    label: "Social Media",
-    href: "/servicos",
-  },
-  {
-    label: "Materiais gráficos",
-    href: "/servicos",
-  },
-];
+import { getWhatsappUrl, siteConfig } from "@/config/site";
 
 export default function Footer() {
-  const whatsappNumber = "5537999418756";
-
-  const whatsappMessage = encodeURIComponent(
-    "Olá, Vítor! Conheci a VS Design Studio pelo site e gostaria de conversar sobre um projeto."
-  );
-
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappUrl = getWhatsappUrl(siteConfig.whatsapp.projectMessage);
 
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#050812] text-white">
@@ -107,7 +48,7 @@ export default function Footer() {
               {/* Redes */}
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="https://instagram.com/vsdesignstudio_"
+                  href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Abrir o Instagram da VS Design Studio"
@@ -149,7 +90,7 @@ export default function Footer() {
               </h2>
 
               <ul className="space-y-4">
-                {navigation.map((item) => (
+                {siteConfig.navigation.map((item) => (
                   <li key={item.label}>
                     <Link
                       href={item.href}
@@ -169,7 +110,7 @@ export default function Footer() {
               </h2>
 
               <ul className="space-y-4">
-                {services.map((service) => (
+                {siteConfig.footerServices.map((service) => (
                   <li key={service.label}>
                     <Link
                       href={service.href}
@@ -226,7 +167,7 @@ export default function Footer() {
 
                 {/* E-mail */}
                 <a
-                  href="mailto:contato@vsdesignstudio.com.br"
+                  href={`mailto:${siteConfig.email}`}
                   aria-label="Enviar e-mail para a VS Design Studio"
                   className="group flex items-start gap-3 text-gray-400 transition-colors duration-300 hover:text-white"
                 >
@@ -295,11 +236,11 @@ export default function Footer() {
                     </strong>
 
                     <span className="mt-1 block text-sm">
-                      Bom Despacho, Minas Gerais
+                      {siteConfig.location.label}
                     </span>
 
                     <span className="mt-1 block text-xs text-gray-400">
-                      Atendimento online para empresas de todo o Brasil
+                      {siteConfig.location.online}
                     </span>
                   </span>
                 </div>
@@ -317,8 +258,7 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-400">
-                © {new Date().getFullYear()} VS Design Studio. Todos os direitos
-                reservados.
+                  © {new Date().getFullYear()} {siteConfig.name}. Todos os direitos
               </p>
 
               <p className="mt-2 text-xs text-gray-400">

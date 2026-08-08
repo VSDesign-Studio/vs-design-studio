@@ -2,6 +2,8 @@
 
 import type { FormEvent } from "react";
 
+import { getWhatsappUrl, siteConfig } from "@/config/site";
+
 const services = [
   "Criação de site",
   "Landing page",
@@ -14,7 +16,7 @@ const services = [
 ];
 
 export default function Contact() {
-  const whatsappNumber = "5537999418756";
+  const whatsappContactUrl = getWhatsappUrl("");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -27,8 +29,7 @@ export default function Contact() {
     const service = String(form.get("service") || "").trim();
     const message = String(form.get("message") || "").trim();
 
-    const whatsappMessage = encodeURIComponent(
-      `Olá, Vítor! Conheci a VS Design Studio pelo site e gostaria de solicitar um orçamento.
+    const whatsappMessage = `Olá, Vítor! Conheci a VS Design Studio pelo site e gostaria de solicitar um orçamento.
 
 *Nome:* ${name}
 *E-mail:* ${email}
@@ -36,10 +37,9 @@ export default function Contact() {
 *Serviço de interesse:* ${service}
 
 *Sobre o projeto:*
-${message}`
-    );
+${message}`;
 
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    const whatsappUrl = getWhatsappUrl(whatsappMessage);
 
     window.open(
       whatsappUrl,
@@ -117,7 +117,7 @@ ${message}`
               <div className="mt-8 space-y-4">
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/5537999418756"
+                  href={whatsappContactUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Entrar em contato com a VS Design Studio pelo WhatsApp"
@@ -143,7 +143,7 @@ ${message}`
 
                 {/* E-mail */}
                 <a
-                  href="mailto:contato@vsdesignstudio.com.br"
+                  href={`mailto:${siteConfig.email}`}
                   aria-label="Enviar e-mail para a VS Design Studio"
                   className="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:border-orange-500/40 hover:bg-orange-500/10"
                 >
@@ -160,7 +160,7 @@ ${message}`
                     </strong>
 
                     <span className="mt-1 block break-all text-sm text-gray-400">
-                      contato@vsdesignstudio.com.br
+                      {siteConfig.email}
                     </span>
                   </span>
                 </a>
@@ -180,7 +180,7 @@ ${message}`
                     </strong>
 
                     <span className="mt-1 block text-sm leading-6 text-gray-400">
-                      Bom Despacho, Minas Gerais, com atendimento online para
+                      {siteConfig.location.label}, com atendimento online para
                       empresas de todo o Brasil.
                     </span>
                   </span>
