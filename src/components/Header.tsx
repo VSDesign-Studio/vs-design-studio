@@ -1,28 +1,33 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navigation = [
   {
+    label: "Início",
+    href: "/",
+  },
+  {
     label: "Serviços",
-    href: "#servicos",
+    href: "/servicos",
   },
   {
     label: "Portfólio",
-    href: "#portfolio",
+    href: "/portfolio",
   },
   {
     label: "Sobre",
-    href: "#sobre",
+    href: "/sobre",
   },
   {
     label: "Depoimentos",
-    href: "#depoimentos",
+    href: "/depoimentos",
   },
   {
     label: "Contato",
-    href: "#contato",
+    href: "/contato",
   },
 ];
 
@@ -91,39 +96,40 @@ export default function Header() {
       {/* Barra principal */}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6">
         {/* Logo */}
-        <a
-          href="#inicio"
-          aria-label="Ir para o início da página"
+        <Link
+          href="/"
+          onClick={closeMenu}
+          aria-label="Ir para a página inicial"
           className="flex items-center text-lg font-black tracking-[-0.03em] text-white sm:text-xl"
         >
           VS
           <span className="ml-1.5">Design Studio</span>
           <span className="text-orange-500">.</span>
-        </a>
+        </Link>
 
         {/* Navegação desktop */}
         <nav
           aria-label="Navegação principal"
-          className="hidden items-center gap-8 lg:flex"
+          className="hidden items-center gap-7 lg:flex"
         >
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="relative text-sm font-medium text-gray-300 transition-colors duration-300 after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:rounded-full after:bg-orange-500 after:transition-all after:duration-300 hover:text-white hover:after:w-full"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* CTA desktop */}
-        <a
-          href="#contato"
+        <Link
+          href="/contato"
           className="hidden rounded-xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(249,115,22,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-orange-600 lg:inline-flex"
         >
           Solicitar orçamento
-        </a>
+        </Link>
 
         {/* Botão mobile */}
         <button
@@ -148,12 +154,13 @@ export default function Header() {
           id="mobile-menu"
           className="fixed inset-x-0 bottom-0 top-20 z-[9997] overflow-y-auto overscroll-contain border-t border-white/10 bg-[#070B16] lg:hidden"
         >
-          {/* Glows apenas decorativos */}
+          {/* Glow azul */}
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -left-28 top-16 h-72 w-72 rounded-full bg-blue-600/10 blur-[120px]"
           />
 
+          {/* Glow laranja */}
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-28 bottom-10 h-72 w-72 rounded-full bg-orange-500/10 blur-[120px]"
@@ -165,7 +172,7 @@ export default function Header() {
               className="flex flex-col gap-2"
             >
               {navigation.map((item, index) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
                   onClick={closeMenu}
@@ -174,20 +181,20 @@ export default function Header() {
                   <span>{item.label}</span>
 
                   <span className="text-sm font-bold text-orange-500 transition-transform duration-300 group-hover:translate-x-1">
-                    0{index + 1}
+                    {String(index + 1).padStart(2, "0")}
                   </span>
-                </a>
+                </Link>
               ))}
             </nav>
 
             <div className="mt-auto border-t border-white/10 pt-8">
-              <a
-                href="#contato"
+              <Link
+                href="/contato"
                 onClick={closeMenu}
                 className="flex w-full items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 font-semibold text-white shadow-[0_15px_40px_rgba(249,115,22,0.25)] transition-all duration-300 hover:bg-orange-600"
               >
                 Solicitar orçamento
-              </a>
+              </Link>
 
               <p className="mt-6 text-center text-sm leading-6 text-gray-400">
                 Design, sites, identidade visual e soluções digitais para

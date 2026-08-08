@@ -1,23 +1,61 @@
 "use client";
 
+import Link from "next/link";
+
 import Reveal from "./Reveal";
 
 const navigation = [
-  { label: "Início", href: "#inicio" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Portfólio", href: "#portfolio" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Contato", href: "#contato" },
+  {
+    label: "Início",
+    href: "/",
+  },
+  {
+    label: "Serviços",
+    href: "/servicos",
+  },
+  {
+    label: "Portfólio",
+    href: "/portfolio",
+  },
+  {
+    label: "Sobre",
+    href: "/sobre",
+  },
+  {
+    label: "Depoimentos",
+    href: "/depoimentos",
+  },
+  {
+    label: "Contato",
+    href: "/contato",
+  },
 ];
 
 const services = [
-  "Sites profissionais",
-  "Identidade visual",
-  "UI/UX Design",
-  "Soluções com IA",
-  "Social Media",
-  "Materiais gráficos",
+  {
+    label: "Sites profissionais",
+    href: "/servicos",
+  },
+  {
+    label: "Identidade visual",
+    href: "/servicos",
+  },
+  {
+    label: "UI/UX Design",
+    href: "/servicos",
+  },
+  {
+    label: "Soluções com IA",
+    href: "/servicos",
+  },
+  {
+    label: "Social Media",
+    href: "/servicos",
+  },
+  {
+    label: "Materiais gráficos",
+    href: "/servicos",
+  },
 ];
 
 export default function Footer() {
@@ -54,14 +92,14 @@ export default function Footer() {
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-14">
             {/* Marca */}
             <div className="sm:col-span-2 lg:col-span-1">
-              <a
-                href="#inicio"
-                aria-label="Ir para o início da página"
+              <Link
+                href="/"
+                aria-label="Ir para a página inicial"
                 className="inline-flex items-center text-4xl font-black tracking-[-0.04em] text-white"
               >
                 VS
                 <span className="text-orange-500">.</span>
-              </a>
+              </Link>
 
               <p className="mt-6 max-w-sm text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
                 Estúdio de design e soluções digitais especializado em criação
@@ -74,7 +112,7 @@ export default function Footer() {
                 para empresas de todo o Brasil.
               </p>
 
-              {/* Redes e contato rápido */}
+              {/* Redes */}
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="https://instagram.com/vsdesignstudio_"
@@ -84,7 +122,11 @@ export default function Footer() {
                   className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/50 hover:bg-orange-500/10 hover:text-white"
                 >
                   Instagram
-                  <span aria-hidden="true" className="ml-2">
+
+                  <span
+                    aria-hidden="true"
+                    className="ml-2"
+                  >
                     ↗
                   </span>
                 </a>
@@ -97,7 +139,11 @@ export default function Footer() {
                   className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/50 hover:bg-green-500/10 hover:text-white"
                 >
                   WhatsApp
-                  <span aria-hidden="true" className="ml-2">
+
+                  <span
+                    aria-hidden="true"
+                    className="ml-2"
+                  >
                     ↗
                   </span>
                 </a>
@@ -113,12 +159,12 @@ export default function Footer() {
               <ul className="space-y-4">
                 {navigation.map((item) => (
                   <li key={item.label}>
-                    <a
+                    <Link
                       href={item.href}
                       className="inline-flex text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-orange-400 sm:text-base"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -132,13 +178,13 @@ export default function Footer() {
 
               <ul className="space-y-4">
                 {services.map((service) => (
-                  <li key={service}>
-                    <a
-                      href="#servicos"
+                  <li key={service.label}>
+                    <Link
+                      href={service.href}
                       className="inline-flex text-sm text-gray-400 transition-all duration-300 hover:translate-x-1 hover:text-orange-400 sm:text-base"
                     >
-                      {service}
-                    </a>
+                      {service.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -204,7 +250,14 @@ export default function Footer() {
                       strokeLinejoin="round"
                       aria-hidden="true"
                     >
-                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2"
+                      />
+
                       <path d="m3 7 9 6 9-6" />
                     </svg>
                   </span>
@@ -235,7 +288,12 @@ export default function Footer() {
                       aria-hidden="true"
                     >
                       <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z" />
-                      <circle cx="12" cy="10" r="2.5" />
+
+                      <circle
+                        cx="12"
+                        cy="10"
+                        r="2.5"
+                      />
                     </svg>
                   </span>
 

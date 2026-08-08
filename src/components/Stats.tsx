@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import CountUp from "react-countup";
 
 import Reveal from "./Reveal";
@@ -29,12 +29,37 @@ const stats = [
   },
 ];
 
-export default function Stats() {
-  const [mounted, setMounted] = useState(false);
+const hydrationListeners = new Set<() => void>();
+let hydrated = false;
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+function notifyHydration() {
+  if (hydrated) return;
+  hydrated = true;
+  hydrationListeners.forEach((listener) => listener());
+}
+
+function subscribeHydration(listener: () => void) {
+  hydrationListeners.add(listener);
+
+  if (typeof window !== "undefined" && !hydrated) {
+    const trigger = () => window.requestAnimationFrame(notifyHydration);
+
+    if (document.readyState === "loading") {
+      window.addEventListener("DOMContentLoaded", trigger, { once: true });
+    } else {
+      trigger();
+    }
+  }
+
+  return () => hydrationListeners.delete(listener);
+}
+
+function getHydrationSnapshot() {
+  return hydrated;
+}
+
+export default function Stats() {
+  const mounted = useSyncExternalStore(subscribeHydration, getHydrationSnapshot, () => false);
 
   return (
     <section
