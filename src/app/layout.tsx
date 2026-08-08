@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vsdesignstudio.com.br"),
+  metadataBase: new URL(siteConfig.url),
 
   title: {
     default: "VS Design Studio | Design, Sites e Soluções Digitais",
@@ -38,22 +39,22 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "VS Design Studio",
+      name: siteConfig.name,
     },
   ],
 
-  creator: "VS Design Studio",
-  publisher: "VS Design Studio",
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
 
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br",
+    canonical: siteConfig.url,
   },
 
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.vsdesignstudio.com.br",
-    siteName: "VS Design Studio",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     title: "VS Design Studio | Design, Sites e Soluções Digitais",
     description:
       "Design, tecnologia e estratégia para transformar marcas e construir experiências digitais profissionais.",

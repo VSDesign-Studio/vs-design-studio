@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { siteConfig } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = "https://www.vsdesignstudio.com.br";
+  const siteUrl = siteConfig.url;
 
   return {
     rules: {
