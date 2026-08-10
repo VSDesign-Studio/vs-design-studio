@@ -10,16 +10,17 @@ import ScrollProgress from "@/components/ScrollProgress";
 import Services from "@/components/Services";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
+import { siteConfig } from "@/config/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
 
-  name: "VS Design Studio",
+  name: siteConfig.name,
 
-  url: "https://www.vsdesignstudio.com.br",
+  url: siteConfig.url,
 
-  image: "https://www.vsdesignstudio.com.br/og-image.jpeg",
+  image: `${siteConfig.url}/og-image.jpeg`,
 
   description:
     "Estúdio de design e soluções digitais especializado em criação de sites profissionais, identidade visual, branding, UI/UX Design, social media e soluções com inteligência artificial.",
@@ -43,7 +44,7 @@ const jsonLd = {
 
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Bom Despacho",
+    addressLocality: siteConfig.location.city,
     addressRegion: "MG",
     addressCountry: "BR",
   },
@@ -73,7 +74,7 @@ const jsonLd = {
   ],
 
   sameAs: [
-    "https://instagram.com/vsdesignstudio_",
+    siteConfig.social.instagram,
   ],
 };
 
