@@ -14,19 +14,20 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Portfólio de Design, Branding e Sites",
   description:
     "Conheça projetos de identidade visual, branding, criação de sites, UI/UX e soluções digitais desenvolvidos pela VS Design Studio.",
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br/portfolio",
+    canonical: `${siteConfig.url}/portfolio`,
   },
   openGraph: {
     title: "Portfólio | VS Design Studio",
     description:
       "Projetos de branding, identidade visual, criação de sites e experiências digitais desenvolvidos pela VS Design Studio.",
-    url: "https://www.vsdesignstudio.com.br/portfolio",
+    url: `${siteConfig.url}/portfolio`,
     type: "website",
     locale: "pt_BR",
     images: [

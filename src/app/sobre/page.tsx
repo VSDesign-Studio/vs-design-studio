@@ -15,19 +15,20 @@ import {
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Sobre a VS Design Studio",
   description:
     "Conheça a VS Design Studio, estúdio de design e soluções digitais de Bom Despacho, MG, especializado em criação de sites, identidade visual, UI/UX e inteligência artificial.",
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br/sobre",
+    canonical: `${siteConfig.url}/sobre`,
   },
   openGraph: {
     title: "Sobre a VS Design Studio",
     description:
       "Design, estratégia, tecnologia e criatividade para construir marcas e experiências digitais profissionais.",
-    url: "https://www.vsdesignstudio.com.br/sobre",
+    url: `${siteConfig.url}/sobre`,
     type: "website",
     locale: "pt_BR",
     images: [

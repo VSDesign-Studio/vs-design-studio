@@ -12,19 +12,20 @@ import {
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Testimonials from "@/components/Testimonials";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Depoimentos de Clientes",
   description:
     "Veja depoimentos e experiências de clientes que confiaram na VS Design Studio para projetos de design, identidade visual, criação de sites e soluções digitais.",
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br/depoimentos",
+    canonical: `${siteConfig.url}/depoimentos`,
   },
   openGraph: {
     title: "Depoimentos | VS Design Studio",
     description:
       "Conheça experiências de clientes e empresas que trabalharam com a VS Design Studio.",
-    url: "https://www.vsdesignstudio.com.br/depoimentos",
+    url: `${siteConfig.url}/depoimentos`,
     type: "website",
     locale: "pt_BR",
     images: [

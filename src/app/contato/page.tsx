@@ -13,19 +13,20 @@ import {
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contato e Orçamento",
   description:
     "Entre em contato com a VS Design Studio e solicite um orçamento para criação de sites, identidade visual, branding, UI/UX, social media e soluções digitais.",
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br/contato",
+    canonical: `${siteConfig.url}/contato`,
   },
   openGraph: {
     title: "Contato e Orçamento | VS Design Studio",
     description:
       "Conte sobre seu projeto e solicite um orçamento para design, criação de sites e soluções digitais.",
-    url: "https://www.vsdesignstudio.com.br/contato",
+    url: `${siteConfig.url}/contato`,
     type: "website",
     locale: "pt_BR",
     images: [
@@ -151,7 +152,7 @@ export default function ContactPage() {
             <div className="grid gap-4 md:grid-cols-3">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/5537999418756"
+                href={`https://wa.me/${siteConfig.whatsapp.number}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group rounded-3xl border border-white/10 bg-[#070B16] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/40"
@@ -179,7 +180,7 @@ export default function ContactPage() {
 
               {/* E-mail */}
               <a
-                href="mailto:contato@vsdesignstudio.com.br"
+                href={`mailto:${siteConfig.email}`}
                 className="group rounded-3xl border border-white/10 bg-[#070B16] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-orange-500/40"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10">
@@ -199,7 +200,7 @@ export default function ContactPage() {
                 </p>
 
                 <span className="mt-4 block break-all text-sm font-semibold text-orange-400">
-                  contato@vsdesignstudio.com.br
+                  {siteConfig.email}
                 </span>
               </a>
 

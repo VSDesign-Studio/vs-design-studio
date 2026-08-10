@@ -11,19 +11,20 @@ import {
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Serviços de Design e Criação de Sites",
   description:
     "Conheça os serviços da VS Design Studio: criação de sites profissionais, identidade visual, UI/UX Design, social media e soluções com inteligência artificial.",
   alternates: {
-    canonical: "https://www.vsdesignstudio.com.br/servicos",
+    canonical: `${siteConfig.url}/servicos`,
   },
   openGraph: {
     title: "Serviços | VS Design Studio",
     description:
       "Design, sites profissionais, identidade visual, UI/UX e soluções digitais para empresas.",
-    url: "https://www.vsdesignstudio.com.br/servicos",
+    url: `${siteConfig.url}/servicos`,
     type: "website",
     locale: "pt_BR",
     images: [
