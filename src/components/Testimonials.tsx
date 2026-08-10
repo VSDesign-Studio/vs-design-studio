@@ -79,7 +79,7 @@ export default function Testimonials() {
         <div className="grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial) => (
             <Reveal key={testimonial.name}>
-              <article className="group relative flex h-full min-h-[360px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-500/40 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_rgba(249,115,22,0.15)] sm:min-h-[390px] sm:p-8">
+              <article className="group relative flex h-full min-h-[320px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-6 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-500/40 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_rgba(249,115,22,0.15)] sm:min-h-[390px] sm:p-8">
                 {/* Glow interno */}
                 <div
                   aria-hidden="true"

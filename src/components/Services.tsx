@@ -95,7 +95,7 @@ export default function Services() {
                     duration: 0.25,
                     ease: "easeOut",
                   }}
-                  className="group relative flex h-full min-h-[360px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-6 backdrop-blur-xl transition-[border-color,background-color,box-shadow] duration-300 hover:border-orange-500/50 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_rgba(249,115,22,0.18)] sm:min-h-[390px] sm:p-8 lg:min-h-[430px]"
+                  className="group relative flex h-full min-h-[320px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/[0.05] p-6 backdrop-blur-xl transition-[border-color,background-color,box-shadow] duration-300 hover:border-orange-500/50 hover:bg-white/[0.08] hover:shadow-[0_20px_60px_rgba(249,115,22,0.18)] sm:min-h-[390px] sm:p-8 lg:min-h-[430px]"
                 >
                   {/* Glow interno */}
                   <div

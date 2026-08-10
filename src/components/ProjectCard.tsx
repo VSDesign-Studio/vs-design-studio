@@ -31,7 +31,7 @@ export default function ProjectCard({
         relative
         flex
         h-full
-        min-h-[410px]
+        min-h-[340px]
         overflow-hidden
         rounded-3xl
         border
