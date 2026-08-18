@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { siteConfig } from "@/config/site";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
+import MetaPixel from "@/components/MetaPixel";
+import { siteConfig } from "@/config/site";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -94,7 +97,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body>
+        <MetaPixel />
+
         <GoogleAnalytics gaId="G-81DSL6S6HR" />
+
         {children}
       </body>
     </html>
