@@ -32,7 +32,7 @@ export const projects: Project[] = [
     image: "/images/capa-nebula-films.png",
     year: "2026",
     featured: false,
-    real: true,
+    real: false,
     href: "#contato",
   },
   {
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     image: "/images/casa-dos-bombeiros.png",
     year: "2026",
     featured: false,
-    real: true,
+    real: false,
     href: "#contato",
   },
   {
