@@ -6,12 +6,12 @@ export const siteConfig = {
   email: "contato@vsdesignstudio.com.br",
 
   phone: {
-    number: "5537999418756",
-    display: "(37) 99941-8756",
+    number: "5537998447369",
+    display: "(37) 99844-7369",
   },
 
   whatsapp: {
-    number: "5537999418756",
+    number: "5537998447369",
 
     quoteMessage:
       "Olá, Vítor! Conheci a VS Design Studio pelo site e gostaria de solicitar um orçamento.",

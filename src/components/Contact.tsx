@@ -136,7 +136,7 @@ ${message}`;
                     </strong>
 
                     <span className="mt-1 block text-sm text-gray-400">
-                      (37) 99941-8756
+                      (37) 99844-7369
                     </span>
                   </span>
                 </a>

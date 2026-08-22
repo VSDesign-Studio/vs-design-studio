@@ -25,7 +25,7 @@ const jsonLd = {
   description:
     "Estúdio de design e soluções digitais especializado em criação de sites profissionais, identidade visual, branding, UI/UX Design, social media e soluções com inteligência artificial.",
 
-  telephone: "+55 37 99941-8756",
+  telephone: "+55 37 99844-7369",
 
   areaServed: [
     {
