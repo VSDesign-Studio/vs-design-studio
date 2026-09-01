@@ -83,4 +83,16 @@ export const projects: Project[] = [
     real: true,
     href: "https://www.vsdesignstudio.com.br/",
   },
+  {
+  id: 7,
+  title: "VIVA Energy",
+  category: "Branding & Campanha 360°",
+  description:
+    "Projeto conceitual de branding para uma marca de energético natural, criado do zero com foco em energia, performance e naturalidade, incluindo identidade visual e campanha 360°.",
+  image: "/images/viva-energy.png",
+  year: "2026",
+  featured: false,
+  real: false,
+  href: "https://www.behance.net/gallery/254652173/VIVA-Energy-Campanha-360-Branding-OOH-Digital",
+},
 ];
