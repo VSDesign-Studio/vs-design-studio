@@ -121,7 +121,7 @@ export default function Portfolio() {
             </div>
 
             <a
-              href="#contato"
+              href="/contato"
               className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-orange-500 px-7 py-4 font-semibold text-white shadow-lg shadow-orange-500/15 transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 sm:w-auto lg:mt-0"
             >
               Solicitar orçamento

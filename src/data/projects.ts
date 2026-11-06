@@ -33,7 +33,7 @@ export const projects: Project[] = [
     year: "2026",
     featured: false,
     real: false,
-    href: "#contato",
+    href: "/portfolio/nebula-filmes",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     year: "2026",
     featured: false,
     real: false,
-    href: "#contato",
+    href: "/portfolio/casa-dos-bombeiros",
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     year: "2026",
     featured: false,
     real: false,
-    href: "#contato",
+    href: "/portfolio/atlas-engenharia",
   },
   {
     id: 6,

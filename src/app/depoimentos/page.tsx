@@ -6,7 +6,6 @@ import {
   MessageCircle,
   Quote,
   Sparkles,
-  Star,
 } from "lucide-react";
 
 import Footer from "@/components/Footer";
@@ -15,16 +14,16 @@ import Testimonials from "@/components/Testimonials";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Depoimentos de Clientes",
+  title: "Experiência de Atendimento",
   description:
-    "Veja depoimentos e experiências de clientes que confiaram na VS Design Studio para projetos de design, identidade visual, criação de sites e soluções digitais.",
+    "Conheça o processo de atendimento da VS Design Studio, do entendimento da sua necessidade à entrega do projeto.",
   alternates: {
     canonical: `${siteConfig.url}/depoimentos`,
   },
   openGraph: {
-    title: "Depoimentos | VS Design Studio",
+    title: "Experiência de Atendimento | VS Design Studio",
     description:
-      "Conheça experiências de clientes e empresas que trabalharam com a VS Design Studio.",
+      "Conheça nosso processo de atendimento e acompanhamento de projetos.",
     url: `${siteConfig.url}/depoimentos`,
     type: "website",
     locale: "pt_BR",
@@ -33,15 +32,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpeg",
         width: 1200,
         height: 630,
-        alt: "Depoimentos VS Design Studio — clientes satisfeito",
+        alt: "Experiência de atendimento VS Design Studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Depoimentos | VS Design Studio",
+    title: "Experiência de Atendimento | VS Design Studio",
     description:
-      "Conheça experiências de clientes e empresas que trabalharam com a VS Design Studio.",
+      "Conheça nosso processo de atendimento e acompanhamento de projetos.",
     images: ["/og-image.jpeg"],
   },
 };
@@ -118,7 +117,7 @@ export default function TestimonialsPage() {
                   aria-hidden="true"
                 />
 
-                Depoimentos
+                Nosso atendimento
               </span>
 
               <h1 className="mt-7 text-4xl font-black leading-[1.05] tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-7xl">
@@ -204,7 +203,7 @@ export default function TestimonialsPage() {
             <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-20">
               <div>
                 <span className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400">
-                  Quem já trabalhou conosco
+                  Como trabalhamos
                 </span>
 
                 <h2 className="mt-5 text-3xl font-black leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl">
@@ -240,16 +239,7 @@ export default function TestimonialsPage() {
                     vai utilizar aquela solução.
                   </p>
 
-                  <div className="mt-7 flex gap-1">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <Star
-                        key={star}
-                        size={18}
-                        aria-hidden="true"
-                        className="fill-orange-500 text-orange-500"
-                      />
-                    ))}
-                  </div>
+
                 </div>
               </div>
             </div>
