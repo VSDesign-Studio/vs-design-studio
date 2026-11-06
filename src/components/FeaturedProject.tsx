@@ -111,7 +111,7 @@ export default function FeaturedProject({
             </a>
 
             <a
-              href="#contato"
+              href="/contato"
               className="inline-flex w-full items-center justify-center rounded-xl border border-white/20 bg-white/[0.03] px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-orange-500/60 hover:bg-orange-500/10 hover:text-orange-300 sm:w-auto"
             >
               Quero um projeto assim

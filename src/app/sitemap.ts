@@ -1,10 +1,16 @@
 import type { MetadataRoute } from "next";
+import { projects } from "@/data/projects";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = siteConfig.url;
 
   return [
+    ...projects.filter((project) => project.href.startsWith("/portfolio/")).map((project) => ({
+      url: `${siteUrl}${project.href}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     {
       url: siteUrl,
       lastModified: new Date(),

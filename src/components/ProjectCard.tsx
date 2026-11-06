@@ -16,7 +16,7 @@ export default function ProjectCard({
   description,
   image,
   real,
-  href = "#contato",
+  href = "/portfolio",
 }: Props) {
   const isExternal = href.startsWith("http");
 

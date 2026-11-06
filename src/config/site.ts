@@ -36,7 +36,7 @@ export const siteConfig = {
     { label: "Serviços", href: "/servicos" },
     { label: "Portfólio", href: "/portfolio" },
     { label: "Sobre", href: "/sobre" },
-    { label: "Depoimentos", href: "/depoimentos" },
+    { label: "Atendimento", href: "/depoimentos" },
     { label: "Contato", href: "/contato" },
   ],
 

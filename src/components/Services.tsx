@@ -132,7 +132,7 @@ export default function Services() {
 
                     <div className="mt-auto pt-7">
                       <a
-                        href="#contato"
+                        href="/contato"
                         aria-label={`Solicitar informações sobre ${service.title}`}
                         className="inline-flex items-center gap-2 font-semibold text-orange-400 transition-all duration-300 group-hover:gap-4 hover:text-orange-300"
                       >
